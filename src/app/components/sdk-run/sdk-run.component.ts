@@ -69,7 +69,7 @@ export class SdkRunComponent implements OnDestroy {
           return new Promise<void>((resolve) => {
             const banner = document.createElement('div');
             banner.style.position = 'fixed';
-            banner.style.top = '20px';
+            banner.style.top = '21px';
             banner.style.left = '50%';
             banner.style.transform = 'translateX(-50%)';
             banner.style.zIndex = '999999';
