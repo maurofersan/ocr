@@ -1,0 +1,46 @@
+{
+  "name": "ocr",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --configuration production --base-href /ocr/ && cp dist/ocr/index.html dist/ocr/404.html",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^19.1.0",
+    "@angular/common": "^19.1.0",
+    "@angular/compiler": "^19.1.0",
+    "@angular/core": "^19.1.0",
+    "@angular/forms": "^19.1.0",
+    "@angular/platform-browser": "^19.1.0",
+    "@angular/platform-browser-dynamic": "^19.1.0",
+    "@angular/router": "^19.1.0",
+    "@identy/identy-common": "5.0.0",
+    "@identy/identy-ocr": "4.2.1-b01",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^19.0.1",
+    "@angular-devkit/build-angular": "^19.1.7",
+    "@angular/cli": "^19.1.7",
+    "@angular/compiler-cli": "^19.1.0",
+    "@identy/testcafe-browser-provider-browserstack": "1.14.0",
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^24.9.2",
+    "browserify-fs": "^1.0.0",
+    "fs-extra": "^11.3.2",
+    "jasmine-core": "~5.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "path-browserify": "^1.0.1",
+    "typescript": "~5.7.2"
+  }
+}

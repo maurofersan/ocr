@@ -1,0 +1,21 @@
+<div class="run-section" style="text-align: center; padding: 16px">
+  <button
+    class="capture-btn"
+    (click)="startCameraCapture()"
+    [disabled]="disabled || isCapturing"
+  >
+    CAMERA
+  </button>
+
+  <!-- SDK monta su propio diálogo en body; no se requiere contenedor aquí. -->
+  @if (result) {
+  <div style="margin-top: 16px">
+    <h4>OCR Result (JSON)</h4>
+    <pre>{{ result | json }}</pre>
+  </div>
+  } @if (error) {
+  <div style="margin-top: 16px; color: #b00020">
+    <strong>Error:</strong> {{ error }}
+  </div>
+  }
+</div>
